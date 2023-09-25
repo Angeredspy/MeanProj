@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./post.create.component.css']
 })
 export class PostCreateComponent {
-  numRows = 20;
   enteredValue = 'Type Here!';
   newPost = 'No Content!';
 
