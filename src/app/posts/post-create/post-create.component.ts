@@ -11,11 +11,13 @@ import { Component, EventEmitter } from '@angular/core';
 export class PostCreateComponent {
   enteredTitle = '';
   enteredContent = '';
+  postCreated = new EventEmitter();
 
   onAddPost = () => {
     const post = {
       title: this.enteredTitle, 
       content: this.enteredContent
     }
+    this.postCreated.emit(post)
   };
 }
