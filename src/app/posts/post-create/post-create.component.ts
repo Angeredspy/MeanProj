@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class PostCreateComponent {
   enteredValue = 'Type Here!';
-  newPost = 'No Content!';
+  newPost = '';
 
   onAddPost = () => {
     this.newPost = this.enteredValue;
