@@ -6,13 +6,15 @@ import { MatInputModule } from '@angular/material/input'
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { Header } from './header/header.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent, Header],
+  declarations: [AppComponent, PostCreateComponent, Header, PostListComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -21,6 +23,7 @@ import { Header } from './header/header.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
