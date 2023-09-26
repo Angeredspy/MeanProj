@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-post-create', //The selector property defines the custom HTML tag that
   //Angular will replace with this component.<app-post-create></app-post-create>
@@ -11,6 +11,8 @@ import { Component, EventEmitter } from '@angular/core';
 export class PostCreateComponent {
   enteredTitle = '';
   enteredContent = '';
+  
+  @Output()
   postCreated = new EventEmitter();
 
   onAddPost = () => {
