@@ -14,7 +14,7 @@ export class PostCreateComponent {
   enteredContent = '';
   
   @Output()
-  postCreated = new EventEmitter();
+  postCreated = new EventEmitter<Post>();
 
   onAddPost = () => {
     const post : Post = {
