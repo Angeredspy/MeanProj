@@ -7,5 +7,10 @@ export class PostsService {
         return [...this.posts]
     }
 
+    addPosts = (post: Post) => {
+        const addedPosts: Post = {title: post.title, content: post.content}
+        this.posts.push(addedPosts)
+    }
+
 }
 
